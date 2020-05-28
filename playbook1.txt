@@ -1,0 +1,23 @@
+1) Usecase:
+------------
+Create a Ansible Playbook for tree installation.
+---
+- name: Install tree
+  hosts: all
+  tasks:
+   - name: Tree installation
+     apt:
+      name: tree
+      state: present
+      update_cache: yes
+
+...
+===================================
+To check whether the playbook is created syntacticllay correct or not:
+	ansible-playbook --syntax-check playbook1.yml
+
+=========================================
+To Execute the playbook this was the command:
+
+	ansible-playbook playbook1.yml -b
+
