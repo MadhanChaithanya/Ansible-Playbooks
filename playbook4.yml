@@ -1,0 +1,34 @@
+# Usecase-4:
+# Create a Ansible Playbook for Configuring Tomcat8
+---
+- name: Configuring Tomcat
+  hosts: all
+  tasks:
+   - name: Install Tomcat8
+     apt:
+      name: tomcat8
+      state: present
+   - name: Copy the tomcat-users.xml file
+     copy:
+      src: /home/ubuntu/tomcat-users.xml
+      dest: /etc/tomcat8
+   - name: Change the port of tomcat from 8080 to 9090
+     replace:
+      regexp: 8080
+      replace: 9090
+      path: /etc/tomcat8/server.xml
+   - name: Restart Tomcat8
+     service:
+      name: tomcat8
+      state: restarted
+   - name: Check the URL Response of Ansible Machine-01 (Server-1)
+     uri:
+      url: http://18.207.234.86:9090
+      status_code: 200
+   - name: Check the URL Response of Ansible Machine-02 (Server-2)
+     uri:
+      url: http://100.26.254.105:9090
+      status_code: 200
+
+      
+...       

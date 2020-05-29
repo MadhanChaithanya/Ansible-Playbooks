@@ -1,0 +1,28 @@
+# Usecase-3:
+# Create a Ansible Playbook for Configuring Apache2
+---
+- name: Configuring APACHE2
+  hosts: all
+  tasks:
+   - name: Install APACHE2
+     apt:
+      name: apache2
+      state: present
+   - name: Change the Content of the index.html
+     copy:
+      content: "Welcome to 'Ops_Chaithanya' \n"
+      dest: /var/www/html/index.html
+   - name: Restart the Apache2 service
+     service:
+      name: apache2
+      state: restarted
+   - name: Check the URL Response of Ansible Machine-01 (Server-1)
+     uri:
+      url: http://18.207.234.86
+      status_code: 200
+   - name: Check the URL Response of Ansible Machine-01 (Server-2)
+     uri:
+      url: http://100.26.254.105
+      status_code: 200
+     
+...       
