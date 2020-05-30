@@ -1,0 +1,14 @@
+
+
+
+
+ansible-playbook playbook6.yml --extra-vars "a=chaithanya b=chaithu c=/home/chaithanya d=/home/chaithanya/sample1 e=touch" -b
+
+
+
+
+
+
+
+ ansible-playbook playbook6.yml --extra-vars "a=madhan b=madhang c=/home/madhan d=/home/madhan/dir1 e=directory" -b
+
