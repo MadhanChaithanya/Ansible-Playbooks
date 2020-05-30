@@ -1,0 +1,10 @@
+Global Variables:
+======================
+
+ANSIBLE playbooks to install, upgrade, software packages using variables.
+
+For executing the files
+
+ansible-playbook playbook5.yml --extra-vars "a=tree b=absent c=no" -b
+
+ansible-playbook playbook5.yml --extra-vars "a=git b=present c=no" -b

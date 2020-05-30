@@ -1,0 +1,23 @@
+Variables:
+===================================================
+These are classsified into 3 types:
+1) Global Scope Variables
+2) Host Scope Variables
+3) Play Scope Variables
+
+1) GLobal Scope Variables:
+---------------------------
+These variables are passed from the command prompt and they have the highest level of priority.
+They are passes using 'Extra-Vars' option
+
+2) Host Scope Variables:
+-----------------------------
+These variables are designed to work on a single host or a group of hosts and they have the second level of priority.
+These variables are defined in external files.
+
+3) Play Scope Variables:
+-----------------------
+THese variables are defined with in a playbook and they can work only on the playbook and they have the least priority.
+
+
+
