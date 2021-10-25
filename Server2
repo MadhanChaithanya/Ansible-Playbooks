@@ -1,0 +1,259 @@
+ubuntu@ip-172-16-1-163:~$
+ubuntu@ip-172-16-1-163:~$ sudo apt update
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1294 kB]
+Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [269 kB]
+Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.4 kB]
+Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [522 kB]
+Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [74.8 kB]
+Get:16 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [504 B]
+Get:17 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [866 kB]
+Get:18 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [186 kB]
+Get:19 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [19.3 kB]
+Get:20 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [24.6 kB]
+Get:21 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [6856 B]
+Get:22 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [620 B]
+Get:23 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [2568 B]
+Get:24 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/main Translation-en [1120 B]
+Get:25 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [400 B]
+Get:26 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:27 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [5800 B]
+Get:28 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [2068 B]
+Get:29 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [276 B]
+Get:30 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:31 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [945 kB]
+Get:32 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [178 kB]
+Get:33 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [8840 B]
+Get:34 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [482 kB]
+Get:35 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [69.2 kB]
+Get:36 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [508 B]
+Get:37 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [647 kB]
+Get:38 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [106 kB]
+Get:39 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [12.6 kB]
+Get:40 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [21.9 kB]
+Get:41 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [4948 B]
+Get:42 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [540 B]
+Fetched 20.4 MB in 4s (5685 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+118 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ubuntu@ip-172-16-1-163:~$
+
+ubuntu@ip-172-16-1-163:~$  ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/ubuntu/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/ubuntu/.ssh/id_rsa
+Your public key has been saved in /home/ubuntu/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:7ap1qrgdV9NqoHikZIrEvpItClbDNrJ4xtolFkpZG5E ubuntu@ip-172-16-1-163
+The key's randomart image is:
++---[RSA 3072]----+
+|   ..            |
+|   E.            |
+|   o             |
+|. + o    . .     |
+| *.Bo . S + .    |
+|=+==o+ . + o     |
+|=*B + + o =      |
+|**oo + + =       |
+|=o. o.+oo        |
++----[SHA256]-----+
+ubuntu@ip-172-16-1-163:~$ ls .ssh/
+authorized_keys  id_rsa  id_rsa.pub
+ubuntu@ip-172-16-1-163:~$ rm -f .ssh/id_rsa*
+ubuntu@ip-172-16-1-163:~$ ls .ssh/
+authorized_keys
+ubuntu@ip-172-16-1-163:~$ nano .ssh/authorized_keys
+ubuntu@ip-172-16-1-163:~$ cat .ssh/authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9zEbxXOXLltwTkDwLgtzJrlJrbvF4xh7Riyss1mKvqmd7hes+PPaVp/F7YuLHD3aVsB7uJnw9+lxwq1of2tooL3ptj8nPhhrHznXredujLRi/3MzDOvxadmHpSpA5dt/VXRHKZHW8+9aq/BsPd9WXRVAWT6eNBi+PyNB51ruYlO88NqlXKEDLXtis7b4N3C7zVVxUErtJ1jJfzqW5Vnojp5I1Vx3jG/qPxG1j1vF83Mgrskl6bmlZptgBqkLdlr5A+9L6MiwC2Vce2xHY6P0XGsISMke6u26q3gwZ9czxa4VfNkzMYWW7mHfaYFU7zkb3yQPD8366fQCRVfah3PeR KeyK8S
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCYCGRfVBLIcz2meLhlpuNJP3+ykX9zS1TC5WfRF/QARyUtiSZ6TJt50Wyy43u0CNDinVWbF4hli2/ZD/Jr4OC/R7ZJ5cmXANYz3KFMZ6ZvblZZxld0VBa/yjkBj9iFIWYkJNR/QOn8MRGxZ+ezR9+2w97+Kv3o54JHZvxJNQxF0RN3MrXJR+6IDf+qQXE7YkSrD1wy2AuELHYM1psY5FPcL2gN7+xEt20P571URMhmnOhU/azEZncBDQ4geyuOF7ZIsAxqYuAtDsS2OwkfiyO+jAo9oymWA8lCGCwTl56wJQzF1dmEB5KysXjrJDluiwDYN4KzLi69JcYLrhKNIVMiD7qjP+fQdwVcVqD/3TAQR9tj8WQRxm1/r3u2/5rKzwfsL3WiBZfPV6iYv3c4IMo6RVbqcQUDDyBjNwSt2pQhfoCuggO7QBycmxoDYassaJ6Ak3s3NXZKUkGYgJbg8ZYRO9t55Ye1lu25HoaoasCDUrxwMeCWAc7qPY+izM5JWbU= ubuntu@ip-172-16-1-152
+
+ubuntu@ip-172-16-1-163:~$
+ubuntu@ip-172-16-1-163:~$ curl http://169.254.169.254/metadata/
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title>404 - Not Found</title>
+ </head>
+ <body>
+  <h1>404 - Not Found</h1>
+ </body>
+</html>
+ubuntu@ip-172-16-1-163:~$ curl http://169.254.169.254/metadata
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title>404 - Not Found</title>
+ </head>
+ <body>
+  <h1>404 - Not Found</h1>
+ </body>
+</html>
+ubuntu@ip-172-16-1-163:~$ curl http://169.254.169.254/latest/meta-data/
+ami-id
+ami-launch-index
+ami-manifest-path
+block-device-mapping/
+events/
+hibernation/
+hostname
+identity-credentials/
+instance-action
+instance-id
+instance-life-cycle
+instance-type
+local-hostname
+local-ipv4
+mac
+metrics/
+network/
+placement/
+profile
+public-hostname
+public-ipv4
+public-keys/
+reservation-id
+security-groups
+services/ubuntu@ip-172-16-1-163:~$ curl http://169.254.169.254/latest/meta-data/public-ipv4
+3.85.36.249ubuntu@ip-172-16-1-163:~$
+ubuntu@ip-172-16-1-163:~$
+ubuntu@ip-172-16-1-163:~$ docker --version
+Docker version 20.10.9, build c2ea9bc
+ubuntu@ip-172-16-1-163:~$
+ubuntu@ip-172-16-1-163:~$ docker info
+Client:
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  app: Docker App (Docker Inc., v0.9.1-beta3)
+  buildx: Build with BuildKit (Docker Inc., v0.6.3-docker)
+  scan: Docker Scan (Docker Inc., v0.8.0)
+
+Server:
+ERROR: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/info": dial unix /var/run/docker.sock: connect: permission denied
+errors pretty printing info
+ubuntu@ip-172-16-1-163:~$ docker --version
+Docker version 20.10.9, build c2ea9bc
+ubuntu@ip-172-16-1-163:~$ docker info
+Client:
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  app: Docker App (Docker Inc., v0.9.1-beta3)
+  buildx: Build with BuildKit (Docker Inc., v0.6.3-docker)
+  scan: Docker Scan (Docker Inc., v0.8.0)
+
+Server:
+ERROR: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/info": dial unix /var/run/docker.sock: connect: permission denied
+errors pretty printing info
+ubuntu@ip-172-16-1-163:~$ sudo docker infor
+docker: 'infor' is not a docker command.
+See 'docker --help'
+ubuntu@ip-172-16-1-163:~$ sudo docker info
+Client:
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  app: Docker App (Docker Inc., v0.9.1-beta3)
+  buildx: Build with BuildKit (Docker Inc., v0.6.3-docker)
+  scan: Docker Scan (Docker Inc., v0.8.0)
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 0
+ Server Version: 20.10.9
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 1
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 5b46e404f6b9f661a205e28d59c982d3634148f8
+ runc version: v1.0.2-0-g52b36a2
+ init version: de40ad0
+ Security Options:
+  apparmor
+  seccomp
+   Profile: default
+ Kernel Version: 5.4.0-1045-aws
+ Operating System: Ubuntu 20.04.2 LTS
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 1
+ Total Memory: 978.6MiB
+ Name: ip-172-16-1-163
+ ID: DR7R:OZ56:JAS6:EKHT:CXSV:6YQ6:5UG6:CHB2:QT45:RTZ5:AK5S:AOMW
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Registry: https://index.docker.io/v1/
+ Labels:
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+WARNING: No swap limit support
+ubuntu@ip-172-16-1-163:~$
+ubuntu@ip-172-16-1-163:~$ sudo docker info | grep -i swarm
+WARNING: No swap limit support
+ Swarm: inactive
+ubuntu@ip-172-16-1-163:~$ sudo docker info | grep -w Swarm
+WARNING: No swap limit support
+ Swarm: inactive
+ubuntu@ip-172-16-1-163:~$ exit
+logout
+
+ubuntu@ip-172-16-1-163:~$ docker swarm
+
+Usage:  docker swarm COMMAND
+
+Manage Swarm
+
+Commands:
+  ca          Display and rotate the root CA
+  init        Initialize a swarm
+  join        Join a swarm as a node and/or manager
+  join-token  Manage join tokens
+  leave       Leave the swarm
+  unlock      Unlock swarm
+  unlock-key  Manage the unlock key
+  update      Update the swarm
+
+Run 'docker swarm COMMAND --help' for more information on a command.
+ubuntu@ip-172-16-1-163:~$ docker swarm join-token worker
+To add a worker to this swarm, run the following command:
+
+    docker swarm join --token SWMTKN-1-1el2li9azcnkujxusfaudn23ac4nwbyuwojdz4z5z0sz5odn14-7xpsxt2r4l0y7z7hegr98jfet 172.16.1.163:2377
+
+ubuntu@ip-172-16-1-163:~$
+ubuntu@ip-172-16-1-163:~$
+ubuntu@ip-172-16-1-163:~$
