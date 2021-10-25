@@ -1,0 +1,890 @@
+
+ubuntu@ip-172-16-1-152:~$
+ubuntu@ip-172-16-1-152:~$ sudo apt update
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1294 kB]
+Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [269 kB]
+Get:23 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [2568 B]
+Get:24 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/main Translation-en [1120 B]
+Get:25 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [400 B]
+Get:26 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:27 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [5800 B]
+Get:28 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [2068 B]
+Get:29 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [276 B]
+Get:30 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:31 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [945 kB]
+Get:32 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [178 kB]
+Get:33 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [8840 B]
+Get:34 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [482 kB]
+Get:35 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [69.2 kB]
+Get:36 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [508 B]
+Get:37 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [647 kB]
+Get:38 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [106 kB]
+Get:39 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [12.6 kB]
+Get:40 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [21.9 kB]
+Get:41 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [4948 B]
+Get:42 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [540 B]
+Fetched 20.4 MB in 4s (5739 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+118 packages can be upgraded. Run 'apt list --upgradable' to see them.
+ubuntu@ip-172-16-1-152:~$  sudo apt install software-properties-common
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  python3-software-properties
+The following packages will be upgraded:
+  python3-software-properties software-properties-common
+2 upgraded, 0 newly installed, 0 to remove and 116 not upgraded.
+Need to get 35.7 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 software-properties-common all 0.98.9.5 [10.6 kB]
+The following NEW packages will be installed:
+  ansible ansible-core python3-bcrypt python3-packaging python3-paramiko python3-pyparsing python3-resolvelib sshpass
+0 upgraded, 8 newly installed, 0 to remove and 116 not upgraded.
+Need to get 21.2 MB of archives.
+After this operation, 278 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/main amd64 python3-bcrypt amd64 3.1.7-2ubuntu1 [30.4 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/main amd64 python3-paramiko all 2.6.0-2 [122 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/main amd64 python3-pyparsing all 2.4.6-1 [61.3 kB]
+Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/main amd64 python3-packaging all 20.3-1 [26.8 kB]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/universe amd64 sshpass amd64 1.06-1 [10.5 kB]
+Get:6 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 python3-resolvelib all 0.5.4-2ppa~focal [12.6 kB]
+Get:7 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 ansible-core all 2.11.6-1ppa~focal [927 kB]
+Get:8 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 ansible all 4.7.0-1ppa~focal [20.0 MB]
+Fetched 21.2 MB in 3s (8140 kB/s)
+Selecting previously unselected package python3-bcrypt.
+(Reading database ... 60149 files and directories currently installed.)
+Preparing to unpack .../0-python3-bcrypt_3.1.7-2ubuntu1_amd64.deb ...
+Unpacking python3-bcrypt (3.1.7-2ubuntu1) ...
+Selecting previously unselected package python3-paramiko.
+Preparing to unpack .../1-python3-paramiko_2.6.0-2_all.deb ...
+Unpacking python3-paramiko (2.6.0-2) ...
+Selecting previously unselected package python3-pyparsing.
+Preparing to unpack .../2-python3-pyparsing_2.4.6-1_all.deb ...
+Unpacking python3-pyparsing (2.4.6-1) ...
+Selecting previously unselected package python3-packaging.
+Preparing to unpack .../3-python3-packaging_20.3-1_all.deb ...
+Unpacking python3-packaging (20.3-1) ...
+Selecting previously unselected package python3-resolvelib.
+Preparing to unpack .../4-python3-resolvelib_0.5.4-2ppa~focal_all.deb ...
+Unpacking python3-resolvelib (0.5.4-2ppa~focal) ...
+Selecting previously unselected package sshpass.
+Preparing to unpack .../5-sshpass_1.06-1_amd64.deb ...
+Unpacking sshpass (1.06-1) ...
+Selecting previously unselected package ansible-core.
+Preparing to unpack .../6-ansible-core_2.11.6-1ppa~focal_all.deb ...
+Unpacking ansible-core (2.11.6-1ppa~focal) ...
+Selecting previously unselected package ansible.
+Preparing to unpack .../7-ansible_4.7.0-1ppa~focal_all.deb ...
+Unpacking ansible (4.7.0-1ppa~focal) ...
+Setting up python3-bcrypt (3.1.7-2ubuntu1) ...
+Setting up python3-resolvelib (0.5.4-2ppa~focal) ...
+Setting up sshpass (1.06-1) ...
+Setting up python3-pyparsing (2.4.6-1) ...
+Setting up python3-paramiko (2.6.0-2) ...
+Setting up python3-packaging (20.3-1) ...
+Setting up ansible-core (2.11.6-1ppa~focal) ...
+Setting up ansible (4.7.0-1ppa~focal) ...
+^[[DProcessing triggers for man-db (2.9.1-1) ...
+ubuntu@ip-172-16-1-152:~$ ansible --version
+ansible [core 2.11.6]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/ubuntu/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/ubuntu/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.8.5 (default, Jan 27 2021, 15:41:15) [GCC 9.3.0]
+  jinja version = 2.10.1
+  libyaml = True
+ubuntu@ip-172-16-1-152:~$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/ubuntu/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/ubuntu/.ssh/id_rsa
+Your public key has been saved in /home/ubuntu/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:AjM0zJZLZWtwNja8Bn5LH1UNgexLIiXRfBppHF7rp3w ubuntu@ip-172-16-1-152
+The key's randomart image is:
++---[RSA 3072]----+
+|   o++X=.+.o++   |
+|   .BBo=O.=.  .  |
+|   ++oo=.*.      |
+|    o=* +.o      |
+|     +.+S+...    |
+|      .....o     |
+|          o E    |
+|           .     |
+|                 |
++----[SHA256]-----+
+ubuntu@ip-172-16-1-152:~$ ll .ssh/
+total 20
+drwx------ 2 ubuntu ubuntu 4096 Oct 25 06:46 ./
+drwxr-xr-x 5 ubuntu ubuntu 4096 Oct 25 06:45 ../
+-rw------- 1 ubuntu ubuntu  388 Oct 25 06:38 authorized_keys
+-rw------- 1 ubuntu ubuntu 2610 Oct 25 06:46 id_rsa
+-rw-r--r-- 1 ubuntu ubuntu  576 Oct 25 06:46 id_rsa.pub
+ubuntu@ip-172-16-1-152:~$
+ubuntu@ip-172-16-1-152:~$ ll .ssh/
+total 20
+drwx------ 2 ubuntu ubuntu 4096 Oct 25 06:46 ./
+drwxr-xr-x 5 ubuntu ubuntu 4096 Oct 25 06:45 ../
+-rw------- 1 ubuntu ubuntu  388 Oct 25 06:38 authorized_keys
+-rw------- 1 ubuntu ubuntu 2610 Oct 25 06:46 id_rsa
+-rw-r--r-- 1 ubuntu ubuntu  576 Oct 25 06:46 id_rsa.pub
+ubuntu@ip-172-16-1-152:~$ cat .ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCYCGRfVBLIcz2meLhlpuNJP3+ykX9zS1TC5WfRF/QARyUtiSZ6TJt50Wyy43u0CNDinVWbF4hli2/ZD/Jr4OC/R7ZJ5cmXANYz3KFMZ6ZvblZZxld0VBa/yjkBj9iFIWYkJNR/QOn8MRGxZ+ezR9+2w97+Kv3o54JHZvxJNQxF0RN3MrXJR+6IDf+qQXE7YkSrD1wy2AuELHYM1psY5FPcL2gN7+xEt20P571URMhmnOhU/azEZncBDQ4geyuOF7ZIsAxqYuAtDsS2OwkfiyO+jAo9oymWA8lCGCwTl56wJQzF1dmEB5KysXjrJDluiwDYN4KzLi69JcYLrhKNIVMiD7qjP+fQdwVcVqD/3TAQR9tj8WQRxm1/r3u2/5rKzwfsL3WiBZfPV6iYv3c4IMo6RVbqcQUDDyBjNwSt2pQhfoCuggO7QBycmxoDYassaJ6Ak3s3NXZKUkGYgJbg8ZYRO9t55Ye1lu25HoaoasCDUrxwMeCWAc7qPY+izM5JWbU= ubuntu@ip-172-16-1-152
+ubuntu@ip-172-16-1-152:~$ ssh -i .ssh/id_rsa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                  [ New File ]
+
+ubuntu@ip-172-16-1-152:~$ ssh -i .ssh/id_rsa ubuntu@ip-172-16-1-163
+The authenticity of host 'ip-172-16-1-163 (172.16.1.163)' can't be established.
+ECDSA key fingerprint is SHA256:2Njyq5AhtI/sPgeMPsuFBd8Tovrg9q9QMUpaCimbKvc.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'ip-172-16-1-163,172.16.1.163' (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-1045-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Oct 25 06:53:03 UTC 2021
+
+  System load:  0.0               Processes:             104
+  Usage of /:   18.6% of 7.69GB   Users logged in:       1
+  Memory usage: 23%               IPv4 address for eth0: 172.16.1.163
+  Swap usage:   0%
+
+
+139 updates can be applied immediately.
+71 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+
+Last login: Mon Oct 25 06:47:38 2021 from 49.204.50.81
+ubuntu@ip-172-16-1-163:~$ exit
+logout
+Connection to ip-172-16-1-163 closed.
+ubuntu@ip-172-16-1-152:~$ nano ansible_hosts
+
+
+Use "fg" to return to nano.
+
+[1]+  Stopped                 nano ansible_hosts
+ubuntu@ip-172-16-1-152:~$ nano ansible_hosts
+ubuntu@ip-172-16-1-152:~$ cat ansible_hosts
+
+[all_servers]
+ip-172-16-1-163.ec2.internal
+ip-172-16-1-211.ec2.internal
+ip-172-16-1-146.ec2.internal
+
+ubuntu@ip-172-16-1-152:~$
+
+
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts -m ping all
+ip-172-16-1-163.ec2.internal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+ip-172-16-1-211.ec2.internal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+ip-172-16-1-146.ec2.internal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+ubuntu@ip-172-16-1-152:~$ ansible --version
+ansible [core 2.11.6]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/ubuntu/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/ubuntu/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.8.5 (default, Jan 27 2021, 15:41:15) [GCC 9.3.0]
+  jinja version = 2.10.1
+  libyaml = True
+ubuntu@ip-172-16-1-152:~$ nano /etc/ansible/ansible.cfg
+ubuntu@ip-172-16-1-152:~$ nano /etc/ansible/ansible.cfg
+ubuntu@ip-172-16-1-152:~$ ansible --version
+ansible [core 2.11.6]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/ubuntu/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/ubuntu/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.8.5 (default, Jan 27 2021, 15:41:15) [GCC 9.3.0]
+  jinja version = 2.10.1
+  libyaml = True
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts -m ping all
+ip-172-16-1-163.ec2.internal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+ip-172-16-1-211.ec2.internal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+ip-172-16-1-146.ec2.internal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+ubuntu@ip-172-16-1-152:~$
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts all -m shell -a "cat /etc/passwd"
+ip-172-16-1-146.ec2.internal | CHANGED | rc=0 >>
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+ec2-instance-connect:x:112:65534::/nonexistent:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+ip-172-16-1-163.ec2.internal | CHANGED | rc=0 >>
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+ec2-instance-connect:x:112:65534::/nonexistent:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+ip-172-16-1-211.ec2.internal | CHANGED | rc=0 >>
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+ec2-instance-connect:x:112:65534::/nonexistent:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts all -m shell -a "cat /etc/passwd" |  grep - i ip-172-16-1
+grep: i: No such file or directory
+grep: ip-172-16-1: No such file or directory
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts all -m shell -a "cat /etc/passwd" |  grep -i ip-172-16-1
+ip-172-16-1-211.ec2.internal | CHANGED | rc=0 >>
+ip-172-16-1-163.ec2.internal | CHANGED | rc=0 >>
+ip-172-16-1-146.ec2.internal | CHANGED | rc=0 >>
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts all -m shell -a "cat /etc/passwd" |  grep -i "ubuntu"
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts all -m shell -a "cat /etc/passwd" |  grep -i "ubuntu20"
+ubuntu@ip-172-16-1-152:~$
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts all -m shell -a df -h
+usage: ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-user BECOME_USER] [-K] [-i INVENTORY] [--list-hosts] [-l SUBSET] [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE] [-k]
+               [--private-key PRIVATE_KEY_FILE] [-u REMOTE_USER] [-c CONNECTION] [-T TIMEOUT] [--ssh-common-args SSH_COMMON_ARGS] [--sftp-extra-args SFTP_EXTRA_ARGS] [--scp-extra-args SCP_EXTRA_ARGS]
+               [--ssh-extra-args SSH_EXTRA_ARGS] [-C] [--syntax-check] [-D] [-e EXTRA_VARS] [--vault-id VAULT_IDS] [--ask-vault-password | --vault-password-file VAULT_PASSWORD_FILES] [-f FORKS]
+               [-M MODULE_PATH] [--playbook-dir BASEDIR] [--task-timeout TASK_TIMEOUT] [-a MODULE_ARGS] [-m MODULE_NAME]
+               pattern
+
+Define and run a single task 'playbook' against a set of hosts
+
+positional arguments:
+  pattern               host pattern
+
+optional arguments:
+  --ask-vault-password, --ask-vault-pass
+                        ask for vault password
+  --list-hosts          outputs a list of matching hosts; does not execute anything else
+  --playbook-dir BASEDIR
+                        Since this tool does not use playbooks, use this as a substitute playbook directory.This sets the relative path for many features including roles/ group_vars/ etc.
+  --syntax-check        perform a syntax check on the playbook, but do not execute it
+  --task-timeout TASK_TIMEOUT
+                        set task timeout limit in seconds, must be positive integer.
+  --vault-id VAULT_IDS  the vault identity to use
+  --vault-password-file VAULT_PASSWORD_FILES, --vault-pass-file VAULT_PASSWORD_FILES
+                        vault password file
+  --version             show program's version number, config file location, configured module search path, module location, executable location and exit
+  -B SECONDS, --background SECONDS
+                        run asynchronously, failing after X seconds (default=N/A)
+  -C, --check           don't make any changes; instead, try to predict some of the changes that may occur
+  -D, --diff            when changing (small) files and templates, show the differences in those files; works great with --check
+  -M MODULE_PATH, --module-path MODULE_PATH
+                        prepend colon-separated path(s) to module library (default=~/.ansible/plugins/modules:/usr/share/ansible/plugins/modules)
+  -P POLL_INTERVAL, --poll POLL_INTERVAL
+                        set the poll interval if using -B (default=15)
+  -a MODULE_ARGS, --args MODULE_ARGS
+                        The action's options in space separated k=v format: -a 'opt1=val1 opt2=val2'
+  -e EXTRA_VARS, --extra-vars EXTRA_VARS
+                        set additional variables as key=value or YAML/JSON, if filename prepend with @
+  -f FORKS, --forks FORKS
+                        specify number of parallel processes to use (default=5)
+  -h, --help            show this help message and exit
+  -i INVENTORY, --inventory INVENTORY, --inventory-file INVENTORY
+                        specify inventory host path or comma separated host list. --inventory-file is deprecated
+  -l SUBSET, --limit SUBSET
+                        further limit selected hosts to an additional pattern
+  -m MODULE_NAME, --module-name MODULE_NAME
+                        Name of the action to execute (default=command)
+  -o, --one-line        condense output
+  -t TREE, --tree TREE  log output to this directory
+  -v, --verbose         verbose mode (-vvv for more, -vvvv to enable connection debugging)
+
+Privilege Escalation Options:
+  control how and which user you become as on target hosts
+
+  --become-method BECOME_METHOD
+                        privilege escalation method to use (default=sudo), use `ansible-doc -t become -l` to list valid choices.
+  --become-user BECOME_USER
+                        run operations as this user (default=root)
+  -K, --ask-become-pass
+                        ask for privilege escalation password
+  -b, --become          run operations with become (does not imply password prompting)
+
+Connection Options:
+  control as whom and how to connect to hosts
+
+  --private-key PRIVATE_KEY_FILE, --key-file PRIVATE_KEY_FILE
+                        use this file to authenticate the connection
+  --scp-extra-args SCP_EXTRA_ARGS
+                        specify extra arguments to pass to scp only (e.g. -l)
+  --sftp-extra-args SFTP_EXTRA_ARGS
+                        specify extra arguments to pass to sftp only (e.g. -f, -l)
+  --ssh-common-args SSH_COMMON_ARGS
+                        specify common arguments to pass to sftp/scp/ssh (e.g. ProxyCommand)
+  --ssh-extra-args SSH_EXTRA_ARGS
+                        specify extra arguments to pass to ssh only (e.g. -R)
+  -T TIMEOUT, --timeout TIMEOUT
+                        override the connection timeout in seconds (default=10)
+  -c CONNECTION, --connection CONNECTION
+                        connection type to use (default=smart)
+  -k, --ask-pass        ask for connection password
+  -u REMOTE_USER, --user REMOTE_USER
+                        connect as this user (default=None)
+
+Some actions do not make sense in Ad-Hoc (include, meta, etc)
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts all -m shell -a 'df -h'
+ip-172-16-1-146.ec2.internal | CHANGED | rc=0 >>
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       7.7G  1.5G  6.3G  19% /
+devtmpfs        233M     0  233M   0% /dev
+tmpfs           238M     0  238M   0% /dev/shm
+tmpfs            48M  780K   47M   2% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           238M     0  238M   0% /sys/fs/cgroup
+/dev/loop0       34M   34M     0 100% /snap/amazon-ssm-agent/3552
+/dev/loop1       56M   56M     0 100% /snap/core18/1997
+/dev/loop2       71M   71M     0 100% /snap/lxd/19647
+/dev/loop3       33M   33M     0 100% /snap/snapd/11588
+tmpfs            48M     0   48M   0% /run/user/1000
+ip-172-16-1-211.ec2.internal | CHANGED | rc=0 >>
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       7.7G  1.5G  6.3G  19% /
+devtmpfs        233M     0  233M   0% /dev
+tmpfs           238M     0  238M   0% /dev/shm
+tmpfs            48M  780K   47M   2% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           238M     0  238M   0% /sys/fs/cgroup
+/dev/loop0       34M   34M     0 100% /snap/amazon-ssm-agent/3552
+/dev/loop1       56M   56M     0 100% /snap/core18/1997
+/dev/loop2       71M   71M     0 100% /snap/lxd/19647
+/dev/loop3       33M   33M     0 100% /snap/snapd/11588
+tmpfs            48M     0   48M   0% /run/user/1000
+ip-172-16-1-163.ec2.internal | CHANGED | rc=0 >>
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       7.7G  1.5G  6.3G  19% /
+devtmpfs        484M     0  484M   0% /dev
+tmpfs           490M     0  490M   0% /dev/shm
+tmpfs            98M  780K   98M   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           490M     0  490M   0% /sys/fs/cgroup
+/dev/loop0       34M   34M     0 100% /snap/amazon-ssm-agent/3552
+/dev/loop1       56M   56M     0 100% /snap/core18/1997
+/dev/loop2       71M   71M     0 100% /snap/lxd/19647
+/dev/loop3       33M   33M     0 100% /snap/snapd/11588
+tmpfs            98M     0   98M   0% /run/user/1000
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts all -m shell -a free
+ip-172-16-1-163.ec2.internal | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:        1002052      162384      467932         780      371736      689500
+Swap:             0           0           0
+ip-172-16-1-211.ec2.internal | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:         486724      159888       25952         780      300884      307012
+Swap:             0           0           0
+ip-172-16-1-146.ec2.internal | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:         486724      159832       25516         780      301376      307096
+Swap:             0           0           0
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts all -m shell -a uptime
+ip-172-16-1-211.ec2.internal | CHANGED | rc=0 >>
+ 07:38:01 up 34 min,  1 user,  load average: 0.00, 0.00, 0.00
+ip-172-16-1-163.ec2.internal | CHANGED | rc=0 >>
+ 07:38:01 up 40 min,  1 user,  load average: 0.00, 0.00, 0.00
+ip-172-16-1-146.ec2.internal | CHANGED | rc=0 >>
+ 07:38:01 up 34 min,  1 user,  load average: 0.00, 0.00, 0.00
+ubuntu@ip-172-16-1-152:~$ USER=$(ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'curl http://169.254.169.254/latest/meta-data/public-ipv4')
+ubuntu@ip-172-16-1-152:~$ echo $USER
+100 11 100 11 0 0 2200 0 --:--:-- --:--:-- --:--:-- 2750.249 % Total % Received % Xferd Average Speed Time Time Time Current Dload Upload Total Spent Left Speed
+ubuntu@ip-172-16-1-152:~$ USER=$(ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'curl -sL http://169.254.169.254/latest/meta-data/public-ipv4')
+ubuntu@ip-172-16-1-152:~$ echo $USER
+ip-172-16-1-163.ec2.internal | CHANGED | rc=0 >> 3.85.36.249
+ubuntu@ip-172-16-1-152:~$ echo $USER | cu -d '>>' -f 2
+
+Command 'cu' not found, but can be installed with:
+
+sudo apt install cu
+
+ubuntu@ip-172-16-1-152:~$ echo $USER | cut -d '>>' -f 2
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+ubuntu@ip-172-16-1-152:~$ echo $USER | cut -d ' ' -f 2
+|
+ubuntu@ip-172-16-1-152:~$ echo $USER | cut -d ' ' -f 3
+CHANGED
+ubuntu@ip-172-16-1-152:~$ echo $USER | cut -d ' ' -f 4
+|
+ubuntu@ip-172-16-1-152:~$ echo $USER | cut -d ' ' -f 5
+rc=0
+ubuntu@ip-172-16-1-152:~$ echo $USER | cut -d ' ' -f 6
+>>
+ubuntu@ip-172-16-1-152:~$ echo $USER | cut -d ' ' -f 7
+3.85.36.249
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell \
+> -a 'curl https://get.docker.com | bash'
+ip-172-16-1-163.ec2.internal | CHANGED | rc=0 >>
+# Executing docker install script, commit: 93d2499759296ac1f9c510605fef85052a2c32be
+Client: Docker Engine - Community
+ Version:           20.10.9
+ API version:       1.41
+ Go version:        go1.16.8
+ Git commit:        c2ea9bc
+ Built:             Mon Oct  4 16:08:29 2021
+ OS/Arch:           linux/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.9
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.16.8
+  Git commit:       79ea9d3
+  Built:            Mon Oct  4 16:06:37 2021
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.4.11
+  GitCommit:        5b46e404f6b9f661a205e28d59c982d3634148f8
+ runc:
+  Version:          1.0.2
+  GitCommit:        v1.0.2-0-g52b36a2
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
+================================================================================
+
+To run Docker as a non-privileged user, consider setting up the
+Docker daemon in rootless mode for your user:
+
+    dockerd-rootless-setuptool.sh install
+
+Visit https://docs.docker.com/go/rootless/ to learn about rootless mode.
+
+
+To run the Docker daemon as a fully privileged service, but granting non-root
+users access, refer to https://docs.docker.com/go/daemon-access/
+
+WARNING: Access to the remote API on a privileged Docker daemon is equivalent
+         to root access on the host. Refer to the 'Docker daemon attack surface'
+         documentation for details: https://docs.docker.com/go/attack-surface/
+
+================================================================================  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 18617  100 18617    0     0   491k      0 --:--:-- --:--:-- --:--:--  491k
++ sudo -E sh -c 'apt-get update -qq >/dev/null'
+
++ sudo -E sh -c 'DEBIAN_FRONTEND=noninteractive apt-get install -y -qq apt-transport-https ca-certificates curl >/dev/null'
++ sudo -E sh -c 'curl -fsSL "https://download.docker.com/linux/ubuntu/gpg" | gpg --dearmor --yes -o /usr/share/keyrings/docker-archive-keyring.gpg'
++ sudo -E sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu focal stable" > /etc/apt/sources.list.d/docker.list'
++ sudo -E sh -c 'apt-get update -qq >/dev/null'
++ sudo -E sh -c 'DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends  docker-ce-cli docker-scan-plugin docker-ce >/dev/null'
++ version_gte 20.10
++ '[' -z '' ']'
++ return 0
++ sudo -E sh -c 'DEBIAN_FRONTEND=noninteractive apt-get install -y -qq docker-ce-rootless-extras >/dev/null'
++ sudo -E sh -c 'docker version'
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'docker swarm init'
+ip-172-16-1-163.ec2.internal | FAILED | rc=1 >>
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/swarm/init": dial unix /var/run/docker.sock: connect: permission deniednon-zero return code
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'sudo usermod -aG docker ubuntu'
+ip-172-16-1-163.ec2.internal | CHANGED | rc=0 >>
+
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'docker swarm init'
+ip-172-16-1-163.ec2.internal | FAILED | rc=1 >>
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/swarm/init": dial unix /var/run/docker.sock: connect: permission deniednon-zero return code
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'docker swarm init'
+ip-172-16-1-163.ec2.internal | FAILED | rc=1 >>
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/swarm/init": dial unix /var/run/docker.sock: connect: permission deniednon-zero return code
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'sudo docker swarm init'
+ip-172-16-1-163.ec2.internal | CHANGED | rc=0 >>
+Swarm initialized: current node (l9r5uhl9fiit3gy1iet23ygq2) is now a manager.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join --token SWMTKN-1-1el2li9azcnkujxusfaudn23ac4nwbyuwojdz4z5z0sz5odn14-7xpsxt2r4l0y7z7hegr98jfet 172.16.1.163:2377
+
+To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+ubuntu@ip-172-16-1-152:~$
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'sudo docker swarm join-token worker'
+ip-172-16-1-163.ec2.internal | CHANGED | rc=0 >>
+To add a worker to this swarm, run the following command:
+
+    docker swarm join --token SWMTKN-1-1el2li9azcnkujxusfaudn23ac4nwbyuwojdz4z5z0sz5odn14-7xpsxt2r4l0y7z7hegr98jfet 172.16.1.163:2377
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'sudo docker swarm join-token worker -q'
+ip-172-16-1-163.ec2.internal | CHANGED | rc=0 >>
+SWMTKN-1-1el2li9azcnkujxusfaudn23ac4nwbyuwojdz4z5z0sz5odn14-7xpsxt2r4l0y7z7hegr98jfet
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'sudo docker swarm join-token worker -q' | tail -1
+SWMTKN-1-1el2li9azcnkujxusfaudn23ac4nwbyuwojdz4z5z0sz5odn14-7xpsxt2r4l0y7z7hegr98jfet
+ubuntu@ip-172-16-1-152:~$ TOKEN=$(ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'sudo docker swarm join-token worker -q' | tail -1)
+ubuntu@ip-172-16-1-152:~$
+ubuntu@ip-172-16-1-152:~$ echo $TOKEN
+SWMTKN-1-1el2li9azcnkujxusfaudn23ac4nwbyuwojdz4z5z0sz5odn14-7xpsxt2r4l0y7z7hegr98jfet
+ubuntu@ip-172-16-1-152:~$
+ubuntu@ip-172-16-1-152:~$ nano ansible_hosts
+ubuntu@ip-172-16-1-152:~$ cat ansible_hosts
+
+[all_servers]
+ip-172-16-1-163.ec2.internal
+ip-172-16-1-211.ec2.internal
+ip-172-16-1-146.ec2.internal
+
+[docker_master]
+ip-172-16-1-163.ec2.internal
+
+[docker_nodes]
+ip-172-16-1-211.ec2.internal
+ip-172-16-1-146.ec2.internal
+
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts docker_nodes -m shell -a "docker swarm join --token"^C
+ubuntu@ip-172-16-1-152:~$
+ubuntu@ip-172-16-1-152:~$ echo $TOKEN
+SWMTKN-1-1el2li9azcnkujxusfaudn23ac4nwbyuwojdz4z5z0sz5odn14-7xpsxt2r4l0y7z7hegr98jfet
+ubuntu@ip-172-16-1-152:~$ sible_hosts docker_nodes -m shell -a "docker swarm join --token $TOKEN"
+sible_hosts: command not found
+ubuntu@ip-172-16-1-152:~$ ansible_hosts docker_nodes -m shell -a "docker swarm join --token $TOKEN"
+ansible_hosts: command not found
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts docker_nodes -m shell -a "docker swarm join --token $TOKEN"
+ip-172-16-1-211.ec2.internal | FAILED | rc=127 >>
+/bin/sh: 1: docker: not foundnon-zero return code
+ip-172-16-1-146.ec2.internal | FAILED | rc=127 >>
+/bin/sh: 1: docker: not foundnon-zero return code
+ubuntu@ip-172-16-1-152:~$
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts docker_nodes -m shell -a "curl https://get.docker.com | bash'
+>
+> ^C
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts docker_nodes -m shell -a 'curl https://get.docker.com | bash'
+ip-172-16-1-211.ec2.internal | CHANGED | rc=0 >>
+# Executing docker install script, commit: 93d2499759296ac1f9c510605fef85052a2c32be
+Client: Docker Engine - Community
+ Version:           20.10.10
+ API version:       1.41
+ Go version:        go1.16.9
+ Git commit:        b485636
+ Built:             Mon Oct 25 07:42:59 2021
+ OS/Arch:           linux/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.10
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.16.9
+  Git commit:       e2f740d
+  Built:            Mon Oct 25 07:41:08 2021
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.4.11
+  GitCommit:        5b46e404f6b9f661a205e28d59c982d3634148f8
+ runc:
+  Version:          1.0.2
+  GitCommit:        v1.0.2-0-g52b36a2
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
+================================================================================
+
+To run Docker as a non-privileged user, consider setting up the
+Docker daemon in rootless mode for your user:
+
+    dockerd-rootless-setuptool.sh install
+
+Visit https://docs.docker.com/go/rootless/ to learn about rootless mode.
+
+
+To run the Docker daemon as a fully privileged service, but granting non-root
+users access, refer to https://docs.docker.com/go/daemon-access/
+
+WARNING: Access to the remote API on a privileged Docker daemon is equivalent
+         to root access on the host. Refer to the 'Docker daemon attack surface'
+         documentation for details: https://docs.docker.com/go/attack-surface/
+
+================================================================================  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 18617  100 18617    0     0   626k      0 --:--:-- --:--:-- --:--:--  626k
++ sudo -E sh -c 'apt-get update -qq >/dev/null'
++ sudo -E sh -c 'DEBIAN_FRONTEND=noninteractive apt-get install -y -qq apt-transport-https ca-certificates curl >/dev/null'
++ sudo -E sh -c 'curl -fsSL "https://download.docker.com/linux/ubuntu/gpg" | gpg --dearmor --yes -o /usr/share/keyrings/docker-archive-keyring.gpg'
++ sudo -E sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu focal stable" > /etc/apt/sources.list.d/docker.list'
++ sudo -E sh -c 'apt-get update -qq >/dev/null'
++ sudo -E sh -c 'DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends  docker-ce-cli docker-scan-plugin docker-ce >/dev/null'
++ version_gte 20.10
++ '[' -z '' ']'
++ return 0
++ sudo -E sh -c 'DEBIAN_FRONTEND=noninteractive apt-get install -y -qq docker-ce-rootless-extras >/dev/null'
++ sudo -E sh -c 'docker version'
+ip-172-16-1-146.ec2.internal | CHANGED | rc=0 >>
+# Executing docker install script, commit: 93d2499759296ac1f9c510605fef85052a2c32be
+Client: Docker Engine - Community
+ Version:           20.10.10
+ API version:       1.41
+ Go version:        go1.16.9
+ Git commit:        b485636
+ Built:             Mon Oct 25 07:42:59 2021
+ OS/Arch:           linux/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.10
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.16.9
+  Git commit:       e2f740d
+  Built:            Mon Oct 25 07:41:08 2021
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.4.11
+  GitCommit:        5b46e404f6b9f661a205e28d59c982d3634148f8
+ runc:
+  Version:          1.0.2
+  GitCommit:        v1.0.2-0-g52b36a2
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
+================================================================================
+
+To run Docker as a non-privileged user, consider setting up the
+Docker daemon in rootless mode for your user:
+
+    dockerd-rootless-setuptool.sh install
+
+Visit https://docs.docker.com/go/rootless/ to learn about rootless mode.
+
+
+To run the Docker daemon as a fully privileged service, but granting non-root
+users access, refer to https://docs.docker.com/go/daemon-access/
+
+WARNING: Access to the remote API on a privileged Docker daemon is equivalent
+         to root access on the host. Refer to the 'Docker daemon attack surface'
+         documentation for details: https://docs.docker.com/go/attack-surface/
+
+================================================================================  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 18617  100 18617    0     0   519k      0 --:--:-- --:--:-- --:--:--  519k
++ sudo -E sh -c 'apt-get update -qq >/dev/null'
++ sudo -E sh -c 'DEBIAN_FRONTEND=noninteractive apt-get install -y -qq apt-transport-https ca-certificates curl >/dev/null'
++ sudo -E sh -c 'curl -fsSL "https://download.docker.com/linux/ubuntu/gpg" | gpg --dearmor --yes -o /usr/share/keyrings/docker-archive-keyring.gpg'
++ sudo -E sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu focal stable" > /etc/apt/sources.list.d/docker.list'
++ sudo -E sh -c 'apt-get update -qq >/dev/null'
++ sudo -E sh -c 'DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends  docker-ce-cli docker-scan-plugin docker-ce >/dev/null'
++ version_gte 20.10
++ '[' -z '' ']'
++ return 0
++ sudo -E sh -c 'DEBIAN_FRONTEND=noninteractive apt-get install -y -qq docker-ce-rootless-extras >/dev/null'
++ sudo -E sh -c 'docker version'
+ubuntu@ip-172-16-1-152:~$
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts docker_master -a "docker node ls"
+ip-172-16-1-163.ec2.internal | CHANGED | rc=0 >>
+ID                            HOSTNAME          STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
+l9r5uhl9fiit3gy1iet23ygq2 *   ip-172-16-1-163   Ready     Active         Leader           20.10.9
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts docker_nodes -m shell -a "docker swarm join --token $TOKEN"
+ip-172-16-1-211.ec2.internal | FAILED | rc=1 >>
+"docker swarm join" requires exactly 1 argument.
+See 'docker swarm join --help'.
+
+Usage:  docker swarm join [OPTIONS] HOST:PORT
+
+Join a swarm as a node and/or managernon-zero return code
+ip-172-16-1-146.ec2.internal | FAILED | rc=1 >>
+"docker swarm join" requires exactly 1 argument.
+See 'docker swarm join --help'.
+
+Usage:  docker swarm join [OPTIONS] HOST:PORT
+
+Join a swarm as a node and/or managernon-zero return code
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts iansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'sudo docker swarm join-token worker -q' | tail -1^C
+ubuntu@ip-172-16-1-152:~$
+ubuntu@ip-172-16-1-152:~$
+ubuntu@ip-172-16-1-152:~$ ansible -i ansible_hosts ip-172-16-1-163.ec2.internal -m shell -a 'sudo docker swarm join-token worker -q' | tail -1 ^C
+ubuntu@ip-172-16-1-152:~$
